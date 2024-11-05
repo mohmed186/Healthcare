@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+ 
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="img/favicon.png" alt="Logo">
+        <span>Mediplus</span>
+    </div>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <a href="#" class="cta">Book Appointment</a>
+    <div class="hamburger" id="hamburger">
+        &#9776; <!-- Unicode for hamburger menu icon -->
+    </div>
+</nav>
+
+
+<script>
+    // JavaScript to toggle the menu visibility
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.navbar .menu');
+
+        hamburger.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<div class="hero-section" id="hero-section">
+    <div class="content">
+        <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.</p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">Get Appointment</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+    </div>
+</div>
+<script>
+    const images = [
+        'url("img/slider.jpg")',
+        'url("img/slider2.jpg")',
+        'url("img/slider3.jpg")'
+    ];
+
+    let currentIndex = 0;
+
+    function changeBackground() {
+        document.getElementById('hero-section').style.backgroundImage = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+    }
+
+    setInterval(changeBackground, 2000); // Change background every second
+</script>
+
+
+   </div>
+  
+   </div>
+
+   <div class="card-container">
+    <div class="card">
+        <h3>Lorem Amet</h3>
+        <h2>Emergency Cases</h2>
+        <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+        <a href="#" class="learn-more">Learn More <span>&rarr;</span></a>
+    </div>
+
+    <div class="card">
+        <h3>Fusce Porttitor</h3>
+        <h2>Doctors Timetable</h2>
+        <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+        <a href="#" class="learn-more">Learn More <span>&rarr;</span></a>
+    </div>
+
+    <div class="card">
+        <h3>Donec Luctus</h3>
+        <h2>Opening Hours</h2>
+        <p>
+            Monday - Friday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.00–20.00 <br>
+            Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.00–18.30 <br>
+            Monday - Thursday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.00–15.00
+        </p>
+        <a href="#" class="learn-more">Learn More <span>&rarr;</span></a>
+    </div>
+</div>
+<div class="container">
+    <h1>
+     We Are Always Ready To Help You &amp; Your Family
+    </h1>
+    <div class="divider">
+    </div>
+    <p>
+     Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts
+    </p>
+    <div class="services">
+     <div class="service-item">
+      <img alt="Ambulance icon" height="80" src="https://storage.googleapis.com/a1aa/image/4OLDuhBuPD4XH1b6LlxV6CA3cqAmsrOwszhDIgeTORAWZ50JA.jpg" width="80"/>
+      <h3>
+       Emergency Help
+      </h3>
+      <p>
+       Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.
+      </p>
+     </div>
+     <div class="service-divider">
+     </div>
+     <div class="service-item">
+      <img alt="Pharmacy icon" height="80" src="https://storage.googleapis.com/a1aa/image/wcFIpwnAMSoONdR4GnMzagbYRPPi8itemKuMAJr1DfXvyypTA.jpg" width="80"/>
+      <h3>
+       Enriched Pharmecy
+      </h3>
+      <p>
+       Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.
+      </p>
+     </div>
+     <div class="service-divider">
+     </div>
+     <div class="service-item">
+      <img alt="Stethoscope icon" height="80" src="https://storage.googleapis.com/a1aa/image/4PO2ekD7g01WdqHBP0DjIz0aUY62JeHuRcY5J1dJQ0LtyypTA.jpg" width="80"/>
+      <h3>
+       Medical Treatment
+      </h3>
+      <p>
+       Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <i class="fas fa-home"></i>
+            <div class="number">3468</div>
+            <div class="label">Hospital Rooms</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-user-md"></i>
+            <div class="number">557</div>
+            <div class="label">Specialist Doctors</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-smile"></i>
+            <div class="number">4379</div>
+            <div class="label">Happy Patients</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-calendar-alt"></i>
+            <div class="number">32</div>
+            <div class="label">Years of Experience</div>
+        </div>
+    </div>
+</div>
+
+<div class="container1">
+    <div class="title">We Offer Different Services To Improve Your Health</div>
+    <div class="icon">
+        <i class="fas fa-heartbeat"></i>
+    </div>
+    <div class="description">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts
+    </div>
+</div>
+
+<div class="container2">
+    <div class="content2">
+     <h2>
+      Who We Are
+     </h2>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo.
+     </p>
+     <p>
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+     </p>
+     <ul>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Maecenas vitae luctus nibh.
+      </li>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Maecenas vitae luctus nibh.
+      </li>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Duis massa massa.
+      </li>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Duis massa massa.
+      </li>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Aliquam feugiat interdum.
+      </li>
+      <li>
+       <i class="fas fa-play-circle">
+       </i>
+       Aliquam feugiat interdum.
+      </li>
+     </ul>
+    </div>
+    <div class="image">
+     <img src="img/video-bg.jpg" />
+    
+      </i>
+     </div>
+    </div>
+   </div>
+<div class="section5">
+   <div class="container3">
+    <div class="content3">
+        <h1>Do you need Emergency Medical Care? Call @ 1234 56789</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+        <div class="buttons">
+            <a href="#" class="button">Contact Now</a>
+            <a href="#" class="button">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+</div> 
+
+
+<div class="container4">
+    <div class="title">We Maintain Cleanliness Rules<br>Inside Our Hospital</div>
+    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</div>
+</div>
+
+
+<div class="container5">
+    <div class="image-container">
+     <img alt="A smiling woman sitting in a medical office with a doctor in the background" height="200" src="img/pf1.jpg" width="300"/>
+    </div>
+    <div class="image-container">
+     <img alt="A doctor with glasses smiling and talking to an elderly woman in a hospital bed" height="200" src="img/pf2.jpg" width="300"/>
+    </div>
+    <div class="image-container">
+     <img alt="A doctor preparing a patient for an MRI scan" height="200" src="img/pf3.jpg" width="300"/>
+    </div>
+    <div class="image-container">
+     <img alt="A doctor looking at a tablet with other medical staff in the background" height="200" src="img/pf4.jpg" width="300"/>
+    </div>
+    
+   </div>
+
+
+   <div class="container4">
+    <div class="title">We Offer Different Services To<br>Improve Your Health</div>
+    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</div>
+</div>
+
+
+<div class="container6">
+    <div class="service-box">
+        <i class="fas fa-clipboard-list"></i>
+        <h3>General Treatment</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+    <div class="service-box">
+        <i class="fas fa-tooth"></i>
+        <h3>Teeth Whitening</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+    <div class="service-box">
+        <i class="fas fa-heart"></i>
+        <h3>Heart Surgery</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+    <div class="service-box">
+        <i class="fas fa-deaf"></i>
+        <h3>Ear Treatment</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+    <div class="service-box">
+        <i class="fas fa-eye"></i>
+        <h3>Vision Problems</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+    <div class="service-box">
+        <i class="fas fa-tint"></i>
+        <h3>Blood Transfusion</h3>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+    </div>
+</div>
+
+<div class="container4">
+    <div class="title">We Provide You The Best Treatment<br>In Resonable Price.</div>
+    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</div>
+</div>
+
+<div class="pricing-container">
+    <div class="pricing-card">
+     <img alt="Scissors icon" height="50" src="img/download (1).png" width="50"/>
+     <h2>
+      Plastic Surgery
+     </h2>
+     <div class="price">
+      $199
+      <span>
+       / Per Visit
+      </span>
+     </div>
+     <ul>
+      <li>
+       Lorem Ipsum Dolor Sit
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Cubitur Sollicitudin Fentum
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Nullam Interdum Enim
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+      <li>
+       Donec Ultricies Metus
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+      <li>
+       Pellentesque Eget Nibh
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+     </ul>
+     <a class="btn-book" href="#">
+      Book Now
+     </a>
+    </div>
+    <div class="pricing-card">
+     <img alt="Tooth icon" height="50" src="img/d.webp" width="50"/>
+     <h2>
+      Teeth Whitening
+     </h2>
+     <div class="price">
+      $299
+      <span>
+       / Per Visit
+      </span>
+     </div>
+     <ul>
+      <li>
+       Lorem Ipsum Dolor Sit
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Cubitur Sollicitudin Fentum
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Nullam Interdum Enim
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+      <li>
+       Donec Ultricies Metus
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+      <li>
+       Pellentesque Eget Nibh
+       <i class="fas fa-times-circle" style="color: #ccc;">
+       </i>
+      </li>
+     </ul>
+     <a class="btn-book" href="#">
+      Book Now
+     </a>
+    </div>
+    <div class="pricing-card">
+     <img alt="Heart icon" height="50" src="img/heart-rate-icon-isolated-on-260nw-1898430523.webp" width="50"/>
+     <h2>
+      Heart Surgery
+     </h2>
+     <div class="price">
+      $399
+      <span>
+       / Per Visit
+      </span>
+     </div>
+     <ul>
+      <li>
+       Lorem Ipsum Dolor Sit
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Cubitur Sollicitudin Fentum
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Nullam Interdum Enim
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Donec Ultricies Metus
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+      <li>
+       Pellentesque Eget Nibh
+       <i class="fas fa-check-circle" style="color: #007bff;">
+       </i>
+      </li>
+     </ul>
+     <a class="btn-book" href="#">
+      Book Now
+     </a>
+    </div>
+   </div>
+
+   <div class="container4">
+    <div class="title">Keep up with Our Most Recent<br>Medical News.</div>
+    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</div>
+</div>
+
+<div class="news-container">
+    <div class="news-card">
+     <img alt="Doctors discussing in a meeting" height="400" src="img/blog1.jpg" width="600"/>
+     <div class="news-content">
+      <div class="news-date">
+       22 Aug, 2020
+      </div>
+      <div class="news-title">
+       We have annnouced our new product.
+      </div>
+      <div class="news-text">
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+      </div>
+     </div>
+    </div>
+    <div class="news-card">
+     <img alt="Doctors reviewing a document" height="400" src="img/blog2.jpg" width="600"/>
+     <div class="news-content">
+      <div class="news-date">
+       15 Jul, 2020
+      </div>
+      <div class="news-title">
+       Top five way for solving teeth problems.
+      </div>
+      <div class="news-text">
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+      </div>
+     </div>
+    </div>
+    <div class="news-card">
+     <img alt="Doctors using a tablet in a meeting" height="400" src="img/blog3.jpg" width="600"/>
+     <div class="news-content">
+      <div class="news-date">
+       05 Jan, 2020
+      </div>
+      <div class="news-title">
+       We provide highly business solutions.
+      </div>
+      <div class="news-text">
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec<br> luctus dictum eros ut imperdiet.</p>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="container4">
+    <div class="title">We Are Always Ready to Help You.<br>Book An Appointment</div>
+    <div class="icon"><i class="fas fa-heartbeat"></i></div>
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</div>
+</div>
+
+
+<div class="appointment-container">
+    <div class="form-wrapper">
+     <div class="input-group">
+      <input placeholder="Name" type="text"/>
+      <input placeholder="Email" type="email"/>
+     </div>
+     <div class="input-group">
+      <input placeholder="Phone" type="text"/>
+      <select>
+       <option>
+        Department
+       </option>
+      </select>
+     </div>
+     <div class="input-group">
+      <select>
+       <option>
+        Doctor
+       </option>
+      </select>
+      <input placeholder="Date" type="date"/>
+     </div>
+     <div class="input-group">
+      <textarea placeholder="Write Your Message Here....."></textarea>
+     </div>
+     <div class="button-wrapper">
+      <button>
+       Book An Appointment
+      </button>
+      <span>
+       ( We will be confirm by an Text Message )
+      </span>
+     </div>
+    </div>
+    <div class="image-wrapper">
+     <img alt="Two doctors, one male and one female, smiling and standing with arms crossed." height="500" src="img/contact-img.png" width="500"/>
+    </div>
+   </div>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="newsletter">
+            <h3>Sign up for newsletter</h3>
+            <p>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+            <form action="#">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        
+        <div class="footer-columns">
+            <div class="footer-column about">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit ame<br> consectetur adipiscing elit do<br>  eiusmod tempor incididunt.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Cases</a></li>
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column hours">
+                <h4>Open Hours</h4>
+                <p>Lorem ipsum dolor sit ame<br> consectetur adipiscing elit do<br>  eiusmod tempor incididunt.</p>
+                <ul>
+                    <li>Monday - Friday: <span>8.00-20.00</span></li>
+                    <li>Saturday: <span>9.00-18.30</span></li>
+                    <li>Monday - Thursday: <span>9.00-15.00</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-column newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to get all our news in your inbox. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
